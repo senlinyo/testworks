@@ -3,7 +3,7 @@
     <div class="top">
       <!-- <img src="" alt=""> -->
       <div class="company">
-        <p>深圳市库袋科技有限公司</p>
+        <p>深圳市库袋科技有限公司x</p>
         <p class="english">SHENZHEN KOUBAG TECHNOLOGY CO.LTD</p>
       </div>
     </div>
