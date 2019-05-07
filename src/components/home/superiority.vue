@@ -178,35 +178,55 @@ export default {
 @media screen and (max-width: 500px) {
   .b5_box {
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .b5_con {
-    width: 90%;
+    width: 45%;
+    margin: 2.5%;
     float: inherit;
-    margin: 0 auto;
     overflow: hidden;
     zoom: 1;
     padding-top: 60px;
     position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 180px;
+    justify-content: center;
+  }
+
+  .b5_img {
+    width: 41px;
+    height: 41px;
+    top:0;
+  }
+  .b5_img img {
+    width: 20px;
+    height: 20px;
   }
   .b3_title {
     margin-top: 20px;
   }
-  .con1 {
-    margin: 0 auto;
-  }
-  .con3 {
-    margin: 0 auto;
-  }
-  .con4 {
-    margin: 0 auto;
-  }
   .b5_con_con {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 24px 10px;
   }
-  .b5_img {
+  .b5_title {
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .b5_content {
+    padding: 0;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  /* .b5_img {
     float: inherit;
     top: -20px;
-    left: 38%;
-  }
+  } */
 }
 </style>

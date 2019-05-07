@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="company">
+      <img src="../assets/kudaiLogo.png" alt>
       <div>
         <p>深圳市库袋科技有限公司</p>
         <p class="english">SHENZHEN KOUBAG TECHNOLOGY CO.LTD</p>
@@ -82,16 +83,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .download {
   cursor: pointer;
 }
 .company {
-  background-color: #4a4f56;
+  background-color: #dbdbdb;
   /* height: 100px; */
   text-align: center;
   font-size: 36px;
   padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company img {
+  margin-right: 10px;
+  width: 78px;
+  height: 60px;
 }
 
 .company > div > .english {
@@ -149,11 +158,19 @@ export default {
 
 @media screen and (max-width: 500px) {
   .company {
-    background-color: #4a4f56;
+    background-color: #dbdbdb;
     /* height: 100px; */
     text-align: center;
-    font-size: 18px;
+    font-size: 26px;
     padding: 15px 0;
+  }
+  .company img {
+    margin-right: 6px;
+    width: 40px;
+    height: 34px;
+  }
+  .company > div > .english {
+    font-size: 7px;
   }
   .topNav {
     font-size: 10px;
