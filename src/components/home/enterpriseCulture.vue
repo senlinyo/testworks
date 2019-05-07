@@ -114,6 +114,7 @@
   @media screen and (max-width: 500px) {
     .box{
       display: block;
+      margin-bottom: 20px;
     }
     .banner{
       height: auto;

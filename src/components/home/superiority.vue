@@ -8,14 +8,18 @@
     </div>
     <div class="b5_box">
       <div class="b5_con wow fadeInLeft con1" data-wow-delay="0.1s">
-        <div class="b5_img b5_img1"></div>
+        <div class="b5_img">
+          <img src="../../assets/phone.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">产业链化运营，业务稳定</p>
           <p class="b5_content">经过5年的业务沉淀，产业链规模形成</p>
         </div>
       </div>
       <div class="b5_con wow fadeInUp" data-wow-delay="0.2s">
-        <div class="b5_img b5_img2"></div>
+        <div class="b5_img">
+          <img src="../../assets/handshake.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">第三方服务</p>
           <p class="b5_content">
@@ -25,21 +29,27 @@
         </div>
       </div>
       <div class="b5_con wow fadeInRight con3" data-wow-delay="0.3s">
-        <div class="b5_img b5_img3"></div>
+        <div class="b5_img">
+          <img src="../../assets/car.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">全国物流</p>
           <p class="b5_content">高密度网点，专业验资，物流垫资等综合服务平台</p>
         </div>
       </div>
-      <!-- <div class="b5_con wow fadeInDown con4" data-wow-delay="0.4s">
-        <div class="b5_img b5_img4"></div>
+      <div class="b5_con wow fadeInDown con4" data-wow-delay="0.4s">
+        <div class="b5_img">
+          <img src="../../assets/talents.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">人才汇聚</p>
           <p class="b5_content">团队来自平安，宜信，阿里和腾讯等顶尖企业</p>
         </div>
       </div>
       <div class="b5_con wow fadeInRight con3" data-wow-delay="0.4s">
-        <div class="b5_img b5_img4"></div>
+        <div class="b5_img">
+          <img src="../../assets/data.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">全国线下服务团队，线上线下相结合</p>
           <p class="b5_content">
@@ -47,9 +57,11 @@
             置换，过户等落地服务
           </p>
         </div>
-      </div> -->
+      </div>
       <div class="b5_con wow fadeInDown con4" data-wow-delay="0.4s">
-        <div class="b5_img b5_img4"></div>
+        <div class="b5_img">
+          <img src="../../assets/deal.png" alt>
+        </div>
         <div class="b5_con_con">
           <p class="b5_title">交易保障</p>
           <p class="b5_content">上车前验车及质量承诺与交车前第三方检测交付承诺双重保障</p>
@@ -131,19 +143,16 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 110px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.b5_img1 {
-  background-image: url("../../assets/bg_triangle.png");
+
+.b5_img img {
+  width: 41px;
+  height: 41px;
 }
-.b5_img2 {
-  background-image: url("../../assets/bg_triangle.png");
-}
-.b5_img3 {
-  background-image: url("../../assets/bg_triangle.png");
-}
-.b5_img4 {
-  background-image: url("../../assets/bg_triangle.png");
-}
+
 .b5_con_con {
   width: 510px;
   height: 140px;

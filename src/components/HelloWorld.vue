@@ -9,7 +9,7 @@
     <div class="topNav">
       <div>首页</div>
       <div class="circle"></div>
-      <div>下载</div>
+      <div class="download" @click="onDownload">下载</div>
       <div class="circle"></div>
       <div>关于我们</div>
     </div>
@@ -22,9 +22,10 @@
       <p>帮助行业有效提升产品价值，实现产业升级;</p>
     </div>-->
     <aboutCompany/>
-    <advantage/>
+    <advantage id="advantage"/>
     <superiority/>
     <enterpriseCulture/>
+    <top/>
     <div class="footer">
       <div class="bottom_box">
         <p>
@@ -44,6 +45,7 @@ import advantage from "./home/advantage";
 import aboutCompany from "./home/aboutCompany";
 import superiority from "./home/superiority";
 import enterpriseCulture from "./home/enterpriseCulture";
+import top from "./home/top";
 
 export default {
   name: "HelloWorld",
@@ -55,24 +57,24 @@ export default {
     aboutCompany,
     superiority,
     enterpriseCulture,
-    about
+    about,
+    top
   },
   data() {
     return {
       pcOrMove: true
     };
   },
-  created() {
-    console.log(document.documentElement.clientWidth);
-    if (document.documentElement.clientWidth > 640) {
-      this.pcOrMove = true;
-    } else {
-      this.pcOrMove = false;
-    }
-  },
+  created() {},
   methods: {
     getDetail() {
       console.log("你好");
+    },
+    onDownload() {
+      console.log("下载");
+      var city_top = document.getElementById("advantage").offsetTop;
+      console.log(city_top);
+      document.documentElement.scrollTop = city_top;
     }
   }
 };
@@ -80,6 +82,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.download {
+  cursor: pointer;
+}
 .company {
   background-color: #4a4f56;
   /* height: 100px; */
@@ -163,6 +169,25 @@ export default {
     height: 4px;
     background-color: #000;
     border-radius: 50%;
+  }
+  .footer {
+    background: #4a4f56;
+    width: 100%;
+  }
+  .bottom_box {
+    padding: 12px 0;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .bottom_box > p {
+    font-size: 8px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.4;
   }
 }
 </style>

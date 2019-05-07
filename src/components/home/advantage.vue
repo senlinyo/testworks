@@ -9,24 +9,32 @@
     </div>
     <div class="b4_contianer">
       <div align="center" class="b4_box wow zoomInUp" data-wow-delay="0.1s">
-        <div class="b4_img b4_img1"></div>
+        <div class="b4_img">
+          <img src="../../assets/qrcode.jpg" alt>
+        </div>
         <p class="b4_img_title">公众号</p>
-        <p class="b4_img_centent">我们帮你分析</p>
+        <!-- <p class="b4_img_centent">我们帮你分析</p> -->
       </div>
       <div align="center" class="b4_box wow zoomInDown" data-wow-delay="0.2s">
-        <div class="b4_img b4_img2"></div>
+        <div class="b4_img">
+          <img src="../../assets/qrcode.jpg" alt>
+        </div>
         <p class="b4_img_title">小程序</p>
-        <p class="b4_img_centent">我们帮你画</p>
+        <!-- <p class="b4_img_centent">我们帮你画</p> -->
       </div>
       <div align="center" class="b4_box wow zoomInLeft" data-wow-delay="0.3s">
-        <div class="b4_img b4_img3"></div>
+        <div class="b4_img">
+          <img src="../../assets/qrcode.jpg" alt>
+        </div>
         <p class="b4_img_title">苹果</p>
-        <p class="b4_img_centent">我们全包</p>
+        <!-- <p class="b4_img_centent">我们全包</p> -->
       </div>
       <div align="center" class="b4_box wow zoomInRight" data-wow-delay="0.4s">
-        <div class="b4_img b4_img4"></div>
+        <div class="b4_img">
+          <img src="../../assets/qrcode.jpg" alt>
+        </div>
         <p class="b4_img_title">安卓</p>
-        <p class="b4_img_centent">我们免费维护</p>
+        <!-- <p class="b4_img_centent">我们免费维护</p> -->
       </div>
     </div>
   </div>
@@ -119,8 +127,15 @@ export default {
   background-repeat: no-repeat;
   background-position: center 48px;
   background-size: 96px 96px;
-  height: 144px;
+  height: 178px;
   transition: background-color 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b4_img img {
+  width: 96px;
+  height: 96px;
 }
 
 .b4_img1 {
@@ -140,7 +155,7 @@ export default {
 }
 
 .b4_img_title {
-  margin-top: 32px;
+  margin-top: 15px;
   font-size: 24px;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
@@ -185,7 +200,7 @@ export default {
     /* margin: 0 auto; */
     /* margin: 20px 0; */
     /* margin: 20px 0; */
-    box-sizing:border-box;
+    box-sizing: border-box;
     /* margin-tp: 20px; */
     margin-left: 0;
     margin-top: 0;
@@ -196,6 +211,14 @@ export default {
   .b4_box:nth-child(odd) {
     /* margin-right: 10px; */
     /* margin: 0 10px; */
+  }
+
+  .b4_box:hover > .b4_img_title {
+    color: #fff;
+  }
+
+  .b4_box:hover > .b4_img_centent {
+    color: #fff;
   }
 }
 </style>
